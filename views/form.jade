@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+
+    form(name="cardDetails",method="POST", action="submitInfo/")
+        input(type="hidden", name="_method", value="PUT")
+        p American Express
+        input(type="radio", name="cardType", value="AExpress")
+        p Visa / MasterCard
+        input(type="radio", name="cardType", value="other", checked)
+        p Name
+        input(type="text", name="name", required)
+        p Card number
+        input(type="text", name="cardNum", minlength="16", maxlength="19", required)
+        p CVV
+        input(type="text", name="cvv", minlength="3", maxlength="4", required)
+        p
+        button(type="submit") Submit
