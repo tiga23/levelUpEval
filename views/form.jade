@@ -4,7 +4,6 @@ block content
 
 
     form(name="cardDetails",method="POST", action="submitInfo/")
-        input(type="hidden", name="_method", value="PUT")
         p American Express
         input(type="radio", name="cardType", value="AExpress")
         p Visa / MasterCard
@@ -15,5 +14,9 @@ block content
         input(type="text", name="cardNum", minlength="16", maxlength="19", required)
         p CVV
         input(type="text", name="cvv", minlength="3", maxlength="4", required)
+        p Month
+        input(type="number", name="month", maxlength="2", required)
+        p Year
+        input(type="number", name="year", maxlength="2", required)
         p
         button(type="submit") Submit
