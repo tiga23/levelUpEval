@@ -1,4 +1,4 @@
-# LevelUp Tech Challange
+# LevelUp Tech Challenge
 
 ## Credit Card Validator
 
